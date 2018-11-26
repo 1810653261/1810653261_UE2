@@ -26,17 +26,17 @@ public class Aufgabe5_1810653261 {
         }
     }
 
-    static void nutzerschleife() {
-        int d=Integer.parseInt(JOptionPane.showInputDialog(null,"Geben sie eine Zahl ein"));
-        int e=Integer.parseInt(JOptionPane.showInputDialog(null,"Geben sie eine Zahl ein"));
-        int k = 0;
+    static void nutzerschleife() { //nutzerschleifen Methode
+        int d=Integer.parseInt(JOptionPane.showInputDialog(null,"Geben sie eine Zahl ein")); // nach erster zahl fragen
+        int e=Integer.parseInt(JOptionPane.showInputDialog(null,"Geben sie eine Zahl ein")); // nach zweiter zahl fragen
+        int k = 0; // variable zum mitzählen der inneren Durchläufe
 
-        for (int i = 0; i < d; i++) {
+        for (int i = 0; i < d; i++) { // erste variable als for schleife
 
-            for (int j = 0; j < e; j++) {
+            for (int j = 0; j < e; j++) { // zweite variable als for schleife
 
-                k++;
-                System.out.println("Das ist der " + k + "Durchlauf der inneren Schleife");
+                k++; // k für jede schleife die durch gemacht wurde
+                System.out.println("Das ist der " + k + "Durchlauf der inneren Schleife"); // ausgabe der k gezählten schleifen
             }
         }
     }
